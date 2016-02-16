@@ -1,0 +1,265 @@
+/* For testing only */
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #fff;
+}
+
+.columns {
+  min-height: 100px !important;
+}*/
+
+/* End for testing */
+
+/*BORDER BOX*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
+
+
+body {
+  background-color: black;
+  font-family: 'Libre Baskerville';
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: auto;
+}
+
+.backgroundimg {
+  height: 300px;
+  background-image: url("../img/landscape.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+header h2 {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.navbar {
+  background-color: #e6e6e6;
+  color: black;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header {
+  width: 100%;;
+  background-color: white;
+  color: #000;
+}
+
+.secondcontent h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+.secondcontent {
+  padding-bottom: 10px;
+}
+
+.featured p {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding: 18px;
+  font-size: 12px;
+  background-color: #fff;
+  color: black;
+}
+
+.boards {
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 18px 5px 18px;
+  margin-top: 20px;
+}
+
+.boards p {
+  color: black;
+}
+
+.mainContent {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.mainContent p {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 15px;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media only screen and (min-width: 520px) {
+
+  .featured p {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px dotted white;
+  }
+
+  .boards {
+    float: left;
+    width: 44%;
+    height: 250px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #051901;
+  }
+
+  .boards p {
+    color: white;
+  }
+
+  .boards p:nth-child(2) {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .mainContent {
+    margin-top: 10px;
+    float: right;
+    width: 55%;
+    text-align: center;
+
+}
+
+  .mainContent p {
+    margin-top: 0;
+    padding-top: 40px;
+    height: 250px;
+    background-color: #000;
+  }
+
+  header {
+    width: 170px;
+    margin-left: 50px;
+    margin-top: 50px;
+    opacity: .05%;
+    line-height: 1.15em;
+    background-color: #e6e6e6;
+    padding-bottom: 15px;
+    /*border: 1px dotted black;*/
+    position: absolute;
+    z-index: 10;
+    opacity: .7;
+    color: black;
+  }
+
+  header h2 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .backgroundimg {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    position: relative;
+  }
+
+  .secondcontent {
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    z-index: 10;
+    color: white;
+    background-color: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .backgroundimg {
+    float: left;
+    width: 70%;
+    height: 650px;
+  }
+
+  .container2 {
+    height: 650px;
+    width: 29%;
+    float: right;
+  }
+
+  .mainContent {
+    float: right;
+    width: 100%;
+    height: 49%;
+    background-color: black;
+    margin-top: 4%;
+  }
+
+  .boards {
+    padding-top: 70px;
+    float: right;
+    width: 100%;
+    height: 49%;
+    margin-top: 0;
+  }
+
+  .secondcontent {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+  }
+}
